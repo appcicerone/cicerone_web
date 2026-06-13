@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cicerone — Tu próximo viaje, planeado por IA</title>
+  <meta name="description" content="Cicerone crea itinerarios de viaje personalizados día a día con inteligencia artificial. Dinos a dónde quieres ir y nosotros nos encargamos del resto." />
+
+  <link rel="icon" type="image/png" href="assets/images/app_icon.png" />
+  <link rel="apple-touch-icon" href="assets/images/app_icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <img src="assets/images/app_icon.png" alt="Cicerone" class="logo__icon" />
+        <span class="logo__text">Cicerone</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </nav>
+
+      <a href="#descarga" class="btn btn--primary btn--small header__cta">Próximamente</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow">Planificación de viajes con IA</span>
+          <h1>Tu próximo viaje, <span class="text-gradient">planeado por IA</span></h1>
+          <p class="hero__subtitle">
+            Dinos a dónde quieres ir, cuéntanos qué te gusta y deja que Cicerone diseñe tu
+            itinerario perfecto, día a día, en cuestión de minutos.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#descarga" class="store-badge">
+              <svg class="store-badge__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <span>
+                <small>Próximamente en</small>
+                App Store
+              </span>
+            </a>
+            <a href="#descarga" class="store-badge">
+              <svg class="store-badge__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.18A1.5 1.5 0 0 0 3 3.4v17.2c0 .47.22.9.6 1.18l10.9-9.78-10.9-9.82zM16 13.4 5.1 22.2c.2.06.4.1.6.1.27 0 .53-.07.76-.21l11.1-6.4L16 13.4zm4.3-4.85-3.1 1.79 3.1 2.78 2.13-1.23a1.5 1.5 0 0 0 0-2.6l-2.13-1.74zM16 10.6l1.85-1.66-11.1-6.4a1.6 1.6 0 0 0-.76-.21c-.2 0-.4.04-.6.1L16 10.6z"/></svg>
+              <span>
+                <small>Próximamente en</small>
+                Google Play
+              </span>
+            </a>
+          </div>
+
+          <ul class="hero__highlights">
+            <li>Itinerarios 100% personalizados</li>
+            <li>Disponible en 5 idiomas</li>
+            <li>Listo en minutos</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="phone">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="phone__header">
+                <img src="assets/images/app_icon.png" alt="" class="phone__logo" />
+                <div>
+                  <p class="phone__greeting">¡Hola, viajera!</p>
+                  <p class="phone__destination">Planeando: Lisboa ✈️</p>
+                </div>
+              </div>
+
+              <div class="phone__search">
+                <span>🔍</span> ¿A dónde vamos?
+              </div>
+
+              <div class="phone__card">
+                <div class="phone__card-image phone__card-image--1"></div>
+                <div class="phone__card-body">
+                  <p class="phone__card-title">Día 1 · Centro histórico</p>
+                  <p class="phone__card-text">Alfama, Castillo de San Jorge, miradores</p>
+                </div>
+              </div>
+
+              <div class="phone__card">
+                <div class="phone__card-image phone__card-image--2"></div>
+                <div class="phone__card-body">
+                  <p class="phone__card-title">Día 2 · Belém</p>
+                  <p class="phone__card-text">Torre de Belém, pastelería, jardines</p>
+                </div>
+              </div>
+
+              <div class="phone__card phone__card--ghost">
+                <div class="phone__card-image phone__card-image--3"></div>
+                <div class="phone__card-body">
+                  <p class="phone__card-title">Día 3 · Sintra</p>
+                  <p class="phone__card-text">Palacios, naturaleza y mucho color</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos / trust strip -->
+    <section class="strip">
+      <div class="container strip__inner">
+        <p>Itinerarios generados por IA · Disponible en español, inglés, francés, alemán e italiano</p>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="como-funciona" class="section">
+      <div class="container">
+        <div class="section__heading">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2>Tu itinerario, en tres pasos</h2>
+          <p>Sin hojas de cálculo, sin pestañas infinitas. Cicerone hace el trabajo pesado por ti.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">1</div>
+            <h3>Busca tu destino</h3>
+            <p>Elige a dónde quieres ir y cuándo. Da igual si es un fin de semana o varias semanas.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">2</div>
+            <h3>Responde unas preguntas</h3>
+            <p>Cuéntanos con quién viajas, tu ritmo y qué te apetece: cultura, naturaleza, gastronomía...</p>
+          </div>
+          <div class="step">
+            <div class="step__number">3</div>
+            <h3>Recibe tu plan de viaje</h3>
+            <p>La IA crea un itinerario día a día con lugares, horarios y rutas listos para explorar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="caracteristicas" class="section section--alt">
+      <div class="container">
+        <div class="section__heading">
+          <span class="eyebrow">Características</span>
+          <h2>Por qué viajar con Cicerone</h2>
+          <p>Tu compañero de viaje impulsado por IA, pensado para que disfrutes desde el primer día.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <div class="feature__icon">🧭</div>
+            <h3>Itinerarios a tu medida</h3>
+            <p>Cada plan se genera según tus respuestas: gustos, presupuesto, compañía y ritmo de viaje.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">📅</div>
+            <h3>Plan día a día</h3>
+            <p>Lugares, horarios y recorridos organizados para cada jornada de tu viaje, sin esfuerzo.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">🗺️</div>
+            <h3>Explora en el mapa</h3>
+            <p>Visualiza cada parada en el mapa y descubre lugares cercanos que no te puedes perder.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">🌍</div>
+            <h3>En tu idioma</h3>
+            <p>Disponible en español, inglés, francés, alemán e italiano, allá donde viajes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Download -->
+    <section id="descarga" class="section cta">
+      <div class="container cta__inner">
+        <h2>Sé de los primeros en viajar con Cicerone</h2>
+        <p>Estamos terminando los últimos detalles. Muy pronto disponible para iOS y Android.</p>
+
+        <div class="hero__actions cta__actions">
+          <span class="store-badge store-badge--cta">
+            <svg class="store-badge__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+            <span>
+              <small>Próximamente en</small>
+              App Store
+            </span>
+          </span>
+          <span class="store-badge store-badge--cta">
+            <svg class="store-badge__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.18A1.5 1.5 0 0 0 3 3.4v17.2c0 .47.22.9.6 1.18l10.9-9.78-10.9-9.82zM16 13.4 5.1 22.2c.2.06.4.1.6.1.27 0 .53-.07.76-.21l11.1-6.4L16 13.4zm4.3-4.85-3.1 1.79 3.1 2.78 2.13-1.23a1.5 1.5 0 0 0 0-2.6l-2.13-1.74zM16 10.6l1.85-1.66-11.1-6.4a1.6 1.6 0 0 0-.76-.21c-.2 0-.4.04-.6.1L16 10.6z"/></svg>
+            <span>
+              <small>Próximamente en</small>
+              Google Play
+            </span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section__heading">
+          <span class="eyebrow">FAQ</span>
+          <h2>Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item" open>
+            <summary>¿Qué es Cicerone?</summary>
+            <p>Cicerone es una app de planificación de viajes que utiliza inteligencia artificial para crear itinerarios personalizados día a día, adaptados a tus gustos y a tu tiempo disponible.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cómo genera Cicerone mi itinerario?</summary>
+            <p>Eliges tu destino y fechas, respondes un breve cuestionario sobre tus preferencias y nuestra IA genera un plan completo con lugares, horarios y rutas para cada día.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿En qué idiomas está disponible?</summary>
+            <p>Cicerone está disponible en español, inglés, francés, alemán e italiano.</p>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cuándo estará disponible la app?</summary>
+            <p>Estamos en la recta final del desarrollo. Muy pronto podrás descargarla en App Store y Google Play.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <img src="assets/images/app_icon.png" alt="Cicerone" class="logo__icon" />
+          <span class="logo__text">Cicerone</span>
+        </a>
+        <p>Tu próximo viaje, planeado por IA.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </div>
+
+      <p class="footer__copy">© 2026 Cicerone. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
